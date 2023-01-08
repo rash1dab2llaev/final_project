@@ -189,8 +189,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    max-width: 250px;
+    max-width: 240px;
 }
+
+
 
 /* second block main */
 .second_block {
@@ -226,6 +228,8 @@ body {
     grid-template-rows: 1fr;
     max-width: 400px;
 }
+
+
 
 /* third block main */
 
@@ -552,15 +556,15 @@ body {
 .footer {
     background-color: #1D1D1D;
     height: 205px;
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+
 }
 
 .footer_menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 80px 50px 50px 50px;
+    border-bottom: 1px solid #fff;
 }
 
 .footer_menu li {
@@ -748,16 +752,15 @@ body {
     .footer {
         background-color: #1D1D1D;
         height: 205px;
-        padding-top: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
+
         line-height: 1.4;
     }
 
     .footer_menu {
         display: flex;
         flex-direction: column;
-
+        padding: 50px 0 0 20px;
+        border: none;
     }
 }
 
@@ -950,6 +953,14 @@ body {
 
     /* second block of second main block */
 
+    .second_block_item p {
+        font-size: 15px;
+    }
+
+    .first_block_item p {
+        font-size: 15px;
+    }
+
 
     /* main third block */
     .third_block_items {
@@ -968,6 +979,30 @@ body {
         font-weight: bold;
 
     }
+
+    .first_block_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 200px;
+    }
+
+
+
+
+    .contact_block_form h2 {
+        font-size: 2em;
+        margin: 20px 0 50px 20px;
+    }
+
+    .contact_block_form_items {
+        padding: 20px;
+
+    }
+
+
+
+
 }
 
 @media (max-width:320px) {
@@ -1015,6 +1050,10 @@ body {
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
+    .second_block h2 {
+        font-size: 1.5em;
+    }
+
     .second_second_block_items {
         display: grid;
         grid-template-columns: 1fr;
@@ -1023,7 +1062,7 @@ body {
     }
 
     .third_block h2 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
 
