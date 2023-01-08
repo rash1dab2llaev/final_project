@@ -1,4 +1,17 @@
+let b = document.querySelector('#b')
+let main = document.querySelector('.main_block')
+let priceBlock = document.querySelector('.price_block')
 
+b.addEventListener('click', d)
+main.classList.add('filter')
+priceBlock.classList.add('filter')
+
+function d() {
+    if (b) {
+        main.classList.remove('filter')
+        priceBlock.classList.remove('filter')
+    }
+}
 
 
 

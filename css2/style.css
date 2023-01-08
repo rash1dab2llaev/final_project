@@ -18,6 +18,11 @@ body {
     margin: 0 auto;
 }
 
+.filter {
+    filter: blur(10px);
+}
+
+
 
 
 /* header */
@@ -110,6 +115,138 @@ body {
 }
 
 
+
+
+/* main */
+
+.main_block {
+    padding: 0 20px;
+
+}
+
+.main_block h2 {
+    padding: 20px 0;
+}
+
+/* first main block */
+.first_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+
+.first_block h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+
+}
+
+
+.sub_first_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+}
+
+/* second block main */
+.second_block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.second_block_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ptc {
+    font-size: 1em;
+    padding: 30px 20px;
+    background-color: #F2EFE9;
+    border-radius: 7px;
+    margin: 50px 0;
+}
+
+/* third block */
+
+
+.third_block_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.third_block_item {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 45px;
+}
+
+
+/* komers block main */
+
+
+.komers_block_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+/* price block main */
+
+.price_block {
+    background-color: #F2EFE9;
+    padding: 50px;
+}
+
+.price_block h2 {
+    padding: 0 0 50px 0;
+}
+
+.price_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+
+}
+
+
+
+.price_list_items:nth-child(1) {
+    background-color: #000F20;
+    padding: 30px;
+    color: #fff;
+    border-radius: 7px
+}
+
+.price_list_items:nth-child(2) {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.price_list_items:nth-child(3) {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 7px
+}
+
 /* footer */
 .footer {
     background-color: #1D1D1D;
@@ -133,11 +270,12 @@ body {
 .footer_menu li a {
     color: #fff;
     text-decoration: none;
-
 }
 
-@media (max-width:900px) {
 
+
+@media (max-width:900px) {
+    /* header */
 
     .menu_block {
         padding: 0px 0;
@@ -167,7 +305,7 @@ body {
     .footer {
         background-color: #1D1D1D;
         height: 205px;
-        margin-top: 20px;
+
         line-height: 1.4;
     }
 
@@ -181,7 +319,7 @@ body {
 
 @media (max-width:580px) {
 
-
+    /* header */
     .menu {
         width: 25%;
     }
@@ -194,11 +332,76 @@ body {
     .login_btn {
         font-size: 0.9em;
     }
+
+    /* main */
+
+    /* first main block */
+    .first_block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'top'
+            'center'
+            'bottom';
+
+    }
+
+    .first_block h2 {
+        grid-area: center;
+    }
+
+    .first_block>p {
+        grid-area: top;
+
+    }
+
+    .sub_first_block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-area: bottom;
+    }
+
+
+    /* second main block */
+
+
+    .second_block_page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* third main block */
+    .third_block_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        row-gap: 20px;
+    }
+
+    /* komers block mmain */
+    .komers_block_page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* price block main */
+    .price_list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 20px;
+
+    }
 }
 
 @media (max-width:480px) {
 
-
+    /* header */
     .menu_block {
         display: none;
         flex-direction: column;
@@ -278,6 +481,8 @@ body {
 }
 
 @media (max-width:320px) {
+
+    /* header */
     .menu {
         display: flex;
         flex-direction: column;
