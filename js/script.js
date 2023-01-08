@@ -1,5 +1,3 @@
-
-
 let headerTop = document.querySelector('.header_top')
 
 headerTop.insertAdjacentHTML(
