@@ -1,0 +1,296 @@
+:root {
+    --text-color: #fff;
+    --btn-color: #000F20;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1980px;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* header */
+
+#menu_burger_button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+    height: 40px;
+    overflow: hidden;
+}
+
+.menu_block_contact {
+    display: none;
+    color: #07070799;
+}
+
+.menu .big_link {
+    font-size: 1.5em;
+}
+
+.menu .big_link:hover {
+    transform: translateY(-60px);
+}
+
+
+.menu li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transition: .4s linear;
+}
+
+.menu li a {
+    padding: 10px 0;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.menu li:hover {
+    transform: translateY(-40px);
+}
+
+.menu li .hover_link {
+    align-self: center;
+    border-bottom: 5px solid #000;
+}
+
+
+.button_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 65px;
+
+}
+
+.login_btn {
+    background-color: inherit;
+    border: none;
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+.login_btn:hover {
+    color: rgb(205, 213, 219);
+}
+
+
+/* footer */
+.footer {
+    background-color: #1D1D1D;
+    height: 205px;
+
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 50px 50px 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer_menu li {
+    list-style: none;
+
+}
+
+.footer_menu li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+@media (max-width:900px) {
+
+
+    .menu_block {
+        padding: 0px 0;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .menu li a {
+        font-size: 0.7em;
+    }
+
+    .menu .big_link {
+        font-size: 1.2em;
+    }
+
+    .menu .big_link:hover {
+        transform: translateY(-40px);
+    }
+
+    .login_btn {
+        font-size: 1.1em;
+    }
+
+    /* footer block */
+    .footer {
+        background-color: #1D1D1D;
+        height: 205px;
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0 0 20px;
+        border: none;
+    }
+}
+
+@media (max-width:580px) {
+
+
+    .menu {
+        width: 25%;
+    }
+
+    .menu li a {
+        font-size: 0.6em;
+    }
+
+
+    .login_btn {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:480px) {
+
+
+    .menu_block {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: e;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        width: 70%;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        margin-top: 80px;
+    }
+
+    .menu_block_contact {
+        display: block;
+        color: #07070799;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .menu .big_link {
+        display: none;
+    }
+
+    .menu li a {
+        padding: 10px 0;
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li:hover {
+        transform: none;
+    }
+
+    .menu li .hover_link {
+        display: none;
+    }
+
+
+    .button_block {
+        display: none;
+    }
+
+
+
+    #menu_burger_button {
+        display: block;
+        position: relative;
+        left: 80%;
+        z-index: 3;
+        top: 20px;
+    }
+
+    .hide {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(153, 153, 153);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+    }
+
+}
+
+@media (max-width:320px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .menu_block_contact {
+
+        font-size: .8em;
+        margin-left: 10px;
+
+    }
+
+}
