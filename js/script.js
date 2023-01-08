@@ -31,6 +31,9 @@ headerTop.insertAdjacentHTML(
                     </div>`
 )
 
+
+
+
 let footer = document.querySelector('.footer')
 
 footer.insertAdjacentHTML(
