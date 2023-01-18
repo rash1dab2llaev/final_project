@@ -136,6 +136,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .header_page_input {
@@ -149,10 +150,19 @@ body {
     background-color: #000F20;
     padding: 15px 40px;
     cursor: pointer;
-    border: none;
-    color: var(--text-color);
     border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    overflow: hidden;
+
 }
+
+.header_page_btn:hover {
+    background-color: #0b1e33;
+
+}
+
 
 .header_tex {
     display: flex;
@@ -164,6 +174,7 @@ body {
 .header_tex a {
     color: var(--text-color);
     font-size: 18px;
+    text-decoration: none;
 }
 
 
@@ -221,13 +232,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 50px;
+
 }
 
 .second_block_item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 
@@ -576,7 +588,13 @@ body {
 .footer_menu li a {
     color: #fff;
     text-decoration: none;
+}
 
+.top_link {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
 }
 
 @media (max-width:1200px) {

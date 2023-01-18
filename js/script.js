@@ -15,7 +15,7 @@ function backColor() {
     if (button.innerHTML = `<img src="${img[1]}" alt="">`) {
         button.innerHTML = `<img src="${img[2]}" alt="">`
         menu_block.classList.toggle('hide')
-    } else {
+    } else if (button.innerHTML = `<img src="${img[2]}" alt="">`) {
         button.innerHTML = `<img src="${img[1]}" alt="">`
         menu_block.classList.toggle('hide')
     }
@@ -37,10 +37,9 @@ let typed = new Typed('.elem', {
 })
 
 
-
+//1
 let faqBtn = document.querySelector('#faq_btn')
 let faqItems = document.querySelector('.faq_block_items')
-
 
 faqBtn.addEventListener('click', hide)
 

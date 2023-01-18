@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css2/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -45,8 +46,8 @@
             </div>
         </div>
     </div>
-    <div class="center">
 
+    <div class="center">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Проверить авто
         </button>
@@ -64,13 +65,15 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ПРОВЕРИТЬ</button>
-                        <button id="btn" type="button" class="btn btn-primary">ПОСМОТРЕТЬ ПРИМЕР ОТЧЕТА</button>
+                        <button type="button" class="btn btn-secondary">ПРОВЕРИТЬ</button>
+                        <button id="btn" type="button" class="btn btn-primary" data-bs-dismiss="modal">ПОСМОТРЕТЬ ПРИМЕР
+                            ОТЧЕТА</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="main_block center">
         <h2>Пример отчета</h2>
         <div class="first_block">
@@ -298,17 +301,17 @@
         <div class="center">
             <h2>Купить отчет</h2>
             <div class="price_list">
-                <div class="price_list_items">
+                <div class="price_list_item1" id="price1">
                     <h4>Подписка «Профи»</h4>
                     <p>1₽<sub>/первый день</sub></p>
                     <p>Далее 690 ₽ / 7 дней за 15 отчетов</p>
                 </div>
-                <div class="price_list_items">
+                <div class="price_list_item2" id="price2">
                     <h4>Один отчет</h4>
                     <p>99₽</p>
                     <p>Для проверки одного ТС</p>
                 </div>
-                <div class="price_list_items">
+                <div class="price_list_item3" id="price3">
                     <h4>Пакет из 5 отчетов</h4>
                     <p>369₽</p>
                     <p>Один отчет за 74 ₽</p>
@@ -331,7 +334,7 @@
             </ul>
         </div>
     </div>
-
+    <a class="top_link" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

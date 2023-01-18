@@ -227,22 +227,36 @@ body {
 }
 
 
-
-.price_list_items:nth-child(1) {
+.cl1 {
     background-color: #000F20;
-    padding: 30px;
     color: #fff;
+}
+
+.cl2 {
+    background-color: #000F20;
+    color: #fff;
+}
+
+.cl3 {
+    background-color: #000F20;
+    color: #fff;
+
+}
+
+.price_list_item1 {
+    transition: .3s;
+    padding: 30px;
     border-radius: 7px
 }
 
-.price_list_items:nth-child(2) {
-    background-color: #fff;
+.price_list_item2 {
+    transition: .3s;
     padding: 30px;
     border-radius: 7px;
 }
 
-.price_list_items:nth-child(3) {
-    background-color: #fff;
+.price_list_item3 {
+    transition: .3s;
     padding: 30px;
     border-radius: 7px
 }
@@ -272,7 +286,13 @@ body {
     text-decoration: none;
 }
 
+.top_link {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
 
+}
 
 @media (max-width:900px) {
     /* header */
