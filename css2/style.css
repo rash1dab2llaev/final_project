@@ -88,7 +88,7 @@ body {
 }
 
 .menu li:hover {
-    transform: translateY(-60px);
+    transform: translateY(-55px);
 }
 
 .menu li .hover_link {
@@ -284,7 +284,7 @@ body {
 
 .header_page_btn {
     background-color: #000F20;
-    padding: 15px 40px;
+    padding: 15px 50px;
     cursor: pointer;
     border-radius: 5px;
     color: #fff;

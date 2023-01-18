@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>final project</title>
 </head>
 
@@ -354,7 +356,34 @@
                                 <input type="text" name="name" id="name" placeholder="Имя">
                                 <input type="number" name="number" id="number" placeholder="Телефон">
                                 <textarea name="" id="" cols="10" rows="5" placeholder="Сообщения"></textarea>
-                                <input id="contact_button" type="submit" name="submit" id="submit">
+                                <!-- btn -->
+                                <button type="button" id="dd1" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Проверить авто
+                                </button>
+
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Спасибо за сообшение,
+                                                    мы ответим как только сможем</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button id="btn" type="button" class="btn btn-primary"
+                                                    data-bs-dismiss="modal">ОК</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form_check">
                                     <input type="checkbox" name="" id="">
                                     <p>Соглашаюсь с Политикой конфиденциальности и обработкой персональных данных</p>
@@ -370,17 +399,24 @@
         <div class="footer">
             <div class="center">
                 <ul class="footer_menu">
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Обработка персональных данных</a></li>
-                    <li><a href="#">Оферта</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">Отменить подписку</a></li>
+                    <li><a href="/html3/index.html">Политика конфиденциальности</a></li>
+                    <li><a href="/html3/index.html">Обработка персональных данных</a></li>
+                    <li><a href="/html3/index.html">Оферта</a></li>
+                    <li><a href="/html3/index.html">Тарифы</a></li>
+                    <li><a href="/html3/index.html">Отменить подписку</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <a class="top_link" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/js/script.js"></script>
 </body>

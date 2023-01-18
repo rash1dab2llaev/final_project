@@ -566,6 +566,18 @@ body {
     margin-right: 40px;
 }
 
+#dd1 {
+    background-color: #000F20;
+    padding: 10px 40px;
+    width: 200px;
+    border-radius: 7px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* footer */
+
 .footer {
     background-color: #1D1D1D;
     height: 205px;
