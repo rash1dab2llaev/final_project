@@ -72,7 +72,7 @@ body {
     list-style: none;
     display: flex;
     flex-direction: column;
-    transition: .4s linear;
+    transition: .3s linear;
 }
 
 .menu li a {
@@ -87,7 +87,7 @@ body {
 
 
 .menu li:hover {
-    transform: translateY(-40px);
+    transform: translateY(-45px);
 }
 
 .menu li .hover_link {
@@ -644,6 +644,10 @@ body {
 
     .menu {
         width: 25%;
+    }
+
+    .menu li:hover {
+        transform: translateY(-30px);
     }
 
     .menu li a {
