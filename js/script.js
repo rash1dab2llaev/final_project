@@ -1,21 +1,5 @@
-let btn = document.querySelector('#btn')
-let main = document.querySelector('.main_block')
-let priceBlock = document.querySelector('.price_block')
-
-btn.addEventListener('click', filter)
-main.classList.add('filter')
-priceBlock.classList.add('filter')
-
-function filter() {
-    if (btn) {
-        main.classList.remove('filter')
-        priceBlock.classList.remove('filter')
-    }
-}
 
 
-
-//menu burger
 let button = document.querySelector('#menu_burger_button')
 let menu_block = document.querySelector('.menu_block')
 let bodyEl = document.querySelector('.header')
