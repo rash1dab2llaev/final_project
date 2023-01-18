@@ -111,3 +111,8 @@ function hide5() {
     faqItems5.classList.toggle('height5')
 
 }
+
+
+
+
+
