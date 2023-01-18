@@ -27,6 +27,8 @@ body {
 
 /* header */
 
+
+
 #menu_burger_button {
     background-color: inherit;
     border: none;
@@ -223,42 +225,70 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 20px;
-
+    margin-bottom: 50px;
 }
 
 
-.cl1 {
+
+
+.dark {
     background-color: #000F20;
     color: #fff;
 }
 
-.cl2 {
-    background-color: #000F20;
-    color: #fff;
-}
-
-.cl3 {
-    background-color: #000F20;
-    color: #fff;
-
+.light {
+    background-color: #fff;
+    color: #000;
 }
 
 .price_list_item1 {
     transition: .3s;
     padding: 30px;
-    border-radius: 7px
+    border-radius: 7px;
+    cursor: pointer;
 }
+
 
 .price_list_item2 {
     transition: .3s;
     padding: 30px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .price_list_item3 {
     transition: .3s;
     padding: 30px;
-    border-radius: 7px
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.price_form_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.price_form {
+    display: flex;
+}
+
+.price_form p {
+    margin-left: 20px;
+}
+
+
+.header_page_btn {
+    background-color: #000F20;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    width: 160px;
+    align-self: center;
 }
 
 /* footer */
@@ -359,7 +389,7 @@ body {
     .first_block {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
             'top'
             'center'
@@ -517,5 +547,17 @@ body {
         margin-left: 10px;
 
     }
+
+    .sub_first_block {
+        font-size: 0.8em;
+    }
+
+    .third_block_item {
+        border: 1px solid black;
+        border-radius: 7px;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
 
 }
